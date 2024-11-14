@@ -1,18 +1,17 @@
-// src/components/EditEmpresa.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams, useNavigate } from 'react-router-dom';  // useParams para obter o id
+import { useParams, useNavigate } from 'react-router-dom';  
 import '../App.css';
 
 function EditEmpresa() {
-  const { id } = useParams();  // Obtém o id da empresa da URL
+  const { id } = useParams();  
   const [nome, setNome] = useState('');
   const [cnpj, setCnpj] = useState('');
   const [message, setMessage] = useState('');
-  const navigate = useNavigate();  // Para redirecionar após a alteração
+  const navigate = useNavigate();  
 
   useEffect(() => {
-    // Requisição para obter os dados da empresa pelo ID
+    
     axios.get(`http://localhost:3000/empresas/${id}`)
       .then(response => {
         setNome(response.data.nome);
@@ -27,11 +26,11 @@ function EditEmpresa() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Enviar os dados atualizados para a API
+  
     axios.put(`http://localhost:3000/empresas/${id}`, { nome, cnpj })
       .then(response => {
         setMessage('Empresa atualizada com sucesso!');
-        navigate('/'); // Redireciona para a lista de empresas
+        navigate('/'); 
       })
       .catch(error => {
         setMessage('Erro ao atualizar empresa. Tente novamente!');

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import '../App.css'; // Corrigindo o caminho para apontar para o arquivo na pasta src
+import '../App.css'; 
 
 
 function AddEmpresa() {
@@ -17,7 +17,7 @@ function AddEmpresa() {
     axios.post('http://localhost:3000/empresas', { nome, cnpj })
       .then(response => {
         setMessage('Empresa adicionada com sucesso!');
-        navigate('/'); // Redireciona para a lista de empresas
+        navigate('/'); 
       })
       .catch(error => {
         setMessage('Erro ao adicionar empresa. Tente novamente!');

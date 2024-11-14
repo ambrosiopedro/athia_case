@@ -1,6 +1,4 @@
-  /* App.css */
 
-  /* Centralizando o container na tela */
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,35 +7,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;  /* Garante que o conteúdo ocupe 100% da altura da tela */
+    min-height: 100vh; 
   }
 
   .container {
-    max-width: 900px;  /* Aumentando a largura do container */
+    max-width: 900px;  
     width: 100%;
-    height: auto;  /* Permite que o container aumente de altura conforme o conteúdo */
-    padding: 40px;  /* Aumentando o padding interno */
+    height: auto;
+    padding: 40px;  
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centraliza o conteúdo dentro do container */
-    margin: 20px;  /* Adicionando uma margem externa */
+    align-items: center; 
+    margin: 20px;  
   }
 
   h2 {
-    font-size: 28px;  /* Aumentando o tamanho da fonte */
+    font-size: 28px; 
     color: #333;
-    margin-bottom: 30px;  /* Aumentando o espaçamento abaixo do título */
-    text-align: center;
+    margin-bottom: 30px; 
   }
 
-  /* Lista de empresas */
+ 
   ul {
     list-style: none;
     padding: 0;
-    width: 100%;  /* Garantir que a lista ocupe toda a largura do container */
+    width: 100%; 
   }
 
   li {
@@ -51,7 +48,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   }
 
-  /* Botões principais */
+  
   .button {
     padding: 10px 20px;
     font-size: 16px;
@@ -90,12 +87,12 @@
     background-color: #c82333;
   }
 
-  /* Estilo do formulário de adicionar */
+ 
   form {
     display: flex;
     flex-direction: column;
-    gap: 20px;  /* Aumentando o espaçamento entre os campos */
-    width: 100%;  /* Garante que o formulário ocupe toda a largura do container */
+    gap: 20px; 
+    width: 100%;  
   }
 
   input {
@@ -103,7 +100,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    width: 100%;  /* Garante que os inputs ocupem toda a largura do formulário */
+    width: 100%;  
   }
 
   input:focus {
@@ -119,7 +116,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;  /* Garante que o botão de submit ocupe toda a largura */
+    width: 100%;  
   }
 
   button[type="submit"]:hover {
